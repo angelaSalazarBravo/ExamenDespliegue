@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .container
+    h1='Vista del personaje'
+    .row
+        .col-12.col-md-3
+            .card(style='width: 18rem')
+                img.card-img-top(src=personaje[0].image alt='Personaje de Rick y Morty')
+                .card-body
+                    h5.card-title Nombre: #{personaje[0].name}
+                        h6.card-subtitle.mb-2.text-muted  Genero: #{personaje[0].gender}
+                        p.card-text
+                        | Fecha:  #{personaje[0].created}
+                        br 
